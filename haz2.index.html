@@ -8,10 +8,6 @@
   </head>
   <body>
     <a-scene>
-      <a-assets>
-        <img id="groundTexture" src="https://cdn.aframe.io/a-painter/images/floor.jpg">
-      </a-assets>
-
       <a-text value="Bienvenido a recamara de diego rojas" position="-1.5 4 -5" color="#000" scale="1.5 1.5 1.5"></a-text>
       <a-text value="Aplica un nuevo color apuntando el cubo del color que prefieras" position="-1.5 3.5 -5" color="#000"></a-text>
 
@@ -33,7 +29,8 @@
 
       <a-sky id="bg" color="#FFF"></a-sky>
 
-      <a-plane src="#groundTexture" rotation="-90 0 0" width="50" height="50"></a-plane>
+      <!-- Piso con color sólido definido para evitar errores de carga -->
+      <a-plane color="#7f8c8d" rotation="-90 0 0" width="50" height="50"></a-plane>
 
       <a-camera>
         <a-cursor></a-cursor>
@@ -41,3 +38,6 @@
     </a-scene>
   </body>
 </html>
+
+</html>
+
